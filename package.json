@@ -4,7 +4,7 @@
   "description": "Sticker counter for Discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "repository": {
     "type": "git",
