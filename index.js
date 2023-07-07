@@ -3,6 +3,7 @@ const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { QuickDB } = require('quick.db');
 const { token } = require('./config.json');
+const deployCommands = require('./deploy.js');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 const db = new QuickDB();
@@ -19,7 +20,7 @@ for (const file of commandFiles) {
 	if ('data' in command && 'execute' in command) {
 		client.commands.set(command.data.name, command);
 	} else {
-		console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
+		console.log(`[WARNING] The command at ${filePath} is missing a required property. Required properites: data, execute.`);
 	}
 }
 
@@ -67,4 +68,5 @@ client.on(Events.InteractionCreate, async interaction => {
 	}
 });
 
+deployCommands();
 client.login(token);
