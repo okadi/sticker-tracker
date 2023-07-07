@@ -28,3 +28,9 @@ Start the bot:
 ```
 npm start
 ```
+
+## Usage
+
+While running, the bot will track stickers sent in channels it can see.
+
+Use `/stickers` to see the totals. Currently only tracks stickers from the current server.
