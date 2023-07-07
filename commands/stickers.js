@@ -7,6 +7,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('stickers')
 		.setDescription('Provides stats on sticker usage.')
+		.setDMPermission(false)
 		.addSubcommand(subcommand => subcommand
 			.setName('top')
 			.setDescription('Sort from top to bottom.'))
