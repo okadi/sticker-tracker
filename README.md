@@ -3,11 +3,10 @@ Track sticker usage in a Discord server.
 
 ## Setting up
 
-### Dependencies
+### Configuration
 
-* discord.js
-* quick.db
-* better-sqlite3
+Rename `config-example.json` to `config.json`
+Fill out with bot's token and user ID
 
 ### Running
 
