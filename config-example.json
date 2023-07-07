@@ -1,5 +1,4 @@
 {
-	"token": "your-token-here",
-	"client": "your-client-here",
-	"guild": "your-guild-here"
+	"token": "bot-token-here",
+	"client": "bot-user-id-here"
 }
