@@ -35,8 +35,8 @@ module.exports = {
 		};
 
         const embed = new EmbedBuilder()
-            .setTitle('Top 5 Stickers')
-            .setDescription(list)
+			.setTitle('Top 5 Stickers')
+			.setDescription(list)
 
 		await interaction.reply({ embeds: [embed] });
 	},
