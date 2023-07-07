@@ -5,8 +5,7 @@ Track sticker usage in a Discord server.
 
 ### Configuration
 
-Rename `config-example.json` to `config.json`
-Fill out with bot's token and user ID
+Rename `config-example.json` to `config.json` and fill out with bot's token and user ID
 
 ### Running
 
