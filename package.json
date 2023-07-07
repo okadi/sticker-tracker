@@ -1,0 +1,24 @@
+{
+  "name": "stickerbot",
+  "version": "1.0.0",
+  "description": "Sticker counter for Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okadi/sticker-tracker.git"
+  },
+  "author": "okadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okadi/sticker-tracker/issues"
+  },
+  "homepage": "https://github.com/okadi/sticker-tracker#readme",
+  "dependencies": {
+    "better-sqlite3": "^8.4.0",
+    "discord.js": "^14.11.0",
+    "quick.db": "^9.1.6"
+  }
+}
