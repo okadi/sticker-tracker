@@ -35,6 +35,8 @@ client.on(Events.MessageCreate, async message => {
 	const serverTable = db.table(`stickers_${message.guildId}`);
 
 	await serverTable.add(`${sticker.id}.uses`, 1)
+	await serverTable.set(`${sticker.id}.name`, sticker.name);
+	await serverTable.set(`${sticker.id}.url`, sticker.url);
 
 	if (!sticker.guildId) {
 		await serverTable.set(`${sticker.id}.guild`, 'default');
